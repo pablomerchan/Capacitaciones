@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
+   textValuefromHtml:string='';
+   textoFinalEnviarAlhijo: string = '';
+   mostrarComponenteHijo: boolean = false;
+
+  enviarMensajeAlhijo() {
+    this.mostrarComponenteHijo = true;
+    this.textoFinalEnviarAlhijo = this.textValuefromHtml;
+  }
 
 }

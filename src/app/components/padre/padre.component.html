@@ -1,1 +1,10 @@
-<p>padre works!</p>
+<label for="nombre">Mensaje:</label>
+<input type="text" [(ngModel)]="textValuefromHtml" name="nombre" id="nombre">
+
+<button (click)="enviarMensajeAlhijo()">Enviar</button>
+
+<div *ngIf="mostrarComponenteHijo">
+  <app-hijo [textoRecibidoEnElHijo]="textoFinalEnviarAlhijo"></app-hijo>
+</div>
+
+
